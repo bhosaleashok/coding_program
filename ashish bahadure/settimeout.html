@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body  style="margin-left: 400px;margin-top: 50px;">
+    <div class="box" id="box"></div>
+    <button onclick="start1()">start</button>
+    <button onclick="stop()">stop</button>
+    
+    <script>
+        var id=''
+        function start1(){
+            id= setTimeout(demo, 1000);
+        }
+        function stop(){
+            clearTimeout(id)
+        }
+function demo(){
+        document.getElementById('box').style="border-radius:50%;height:300px;width:300px"
+       }
+    </script>
+</body>
+</html>

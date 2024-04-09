@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin-left: 400px;margin-top: 50px;">
+    
+    <form action="">
+        <input type="text" placeholder="name" id="name" onfocus="focus1('name')" onblur="blur1('name')"><br><br>
+        <input type="text" id="email" placeholder="email" onfocus="focus1('email')" onblur="blur1('email')"><br><br>
+        <input type="number" id="number" placeholder="number" onfocus="focus1('number')" onblur="blur1('number')"><br><br>
+    </form>
+
+    <script>
+        function focus1(att){
+            document.getElementById(att).style.background='red'
+        }
+        function blur1(att){
+            document.getElementById(att).style.background='blue'
+
+        }
+    </script>
+
+</body>
+</html>

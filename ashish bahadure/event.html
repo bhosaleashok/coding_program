@@ -1,0 +1,49 @@
+<!-- mouse event  -->
+    <!-- keyboard event  -->
+    <!-- form event  -->
+    <!-- window event  --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    .box{
+            width: 100%;
+            height: 400px;
+            background-color: blue;
+        }
+    
+    </style>
+</head>
+<body>
+
+        <div class="box" id="box" onmouseover="demo1()" onmouseleave="demo2()"  onclick="changecolor()" ondblclick="dulclick()" oncontextmenu="demo()"></div>
+    
+        <script>
+            function changecolor(){
+            document.getElementById('box').style.backgroundColor='red'
+            }
+
+            function dulclick(){
+            document.getElementById('box').style.backgroundColor='orange'
+            }
+            function demo(){
+                document.getElementById('box').style.backgroundColor='purple'
+            }
+
+            function demo1(){
+                document.getElementById('box').style.backgroundColor='pink'
+
+            }
+            function demo2(){
+                document.getElementById('box').style.backgroundColor='yellow'
+
+            }
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ .box{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+ }
+ .box1{
+    width: 300px;
+    height: 300px;
+    background-color: green;;
+ }
+</style>
+<body style="margin-left: 400px;margin-top: 50px;">
+    <div id="data" class="box"></div>
+    <button onclick="cadd()">add</button>
+    <button onclick="cremove()">remove</button>
+    <button onclick="ctoggle()">toggle</button>
+    <script>
+        function cadd(){
+            document.getElementById('data').classList.add('box1');
+        }
+        function cremove(){
+            document.getElementById('data').classList.remove('box1');
+        }
+        function ctoggle(){
+            document.getElementById('data').classList.toggle('box1');
+        }
+    </script>
+</body>
+</html>

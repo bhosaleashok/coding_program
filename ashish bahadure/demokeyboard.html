@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin-left: 400px;margin-top: 50px;">
+
+    <input type="number" name="" id="rate" placeholder="rate"  onkeyup="tot(this.value,qnt.vlaue)" > <br><br>
+    <input type="number" id="qnt" placeholder="qnt" onkeyup="tot(this.value,rate.value)"><br><br>
+    <input type="number" id="total" placeholder="total">
+
+    <script>
+        function tot(a,b){
+            const sum=Number(a)*Number(b);
+
+            document.getElementById('total').value=sum;
+
+        }
+    </script>
+</body>
+</html>

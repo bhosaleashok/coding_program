@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  style="margin-left: 400px;margin-top: 50px;">
+    <input type="text" class="inp" value="ashish" > <br><br>
+    <input type="text" class="inp" value="9112992349494" disabled> <br><br>
+    <button onclick="edit()">edit</button>
+    <script>
+        function edit(){
+        document.getElementsByClassName('inp')[0].setAttribute('disabled')
+        }
+    </script>
+</body>
+</html>

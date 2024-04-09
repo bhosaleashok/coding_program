@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body" onkeypress="fun_press()" onkeydown="fun_down()" onkeyup="fun_up()">
+    
+    <script>
+        function fun_press(){
+            document.getElementById('body').style.background='red';
+        }
+
+        function fun_up(){
+            document.getElementById('body').style.background='blue';
+        }
+        function fun_down(){
+            document.getElementById('body').style.background='green';
+        }
+    </script>
+</body>
+</html>
